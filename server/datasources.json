@@ -1,0 +1,11 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb-production": {
+    "url": "mongodb://heroku_1kcpwnm7:al1i77u5m28sbn3m87ahmrmn64@ds047935.mongolab.com:47935/heroku_1kcpwnm7",
+    "name": "mongodb-production",
+    "connector": "mongodb"
+  }
+}
