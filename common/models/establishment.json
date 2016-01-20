@@ -37,6 +37,12 @@
     },
     "commonProducts": {
       "type": "string"
+    },
+    "location": {
+      "type": [
+        "number"
+      ],
+      "index" : "2d"
     }
   },
   "validations": [],
