@@ -14,7 +14,7 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodb-production"
   },
   "AccessToken": {
     "dataSource": "db",
@@ -37,5 +37,15 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "product": {
+    "dataSource": "mongodb-production",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "service": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -1,0 +1,86 @@
+{
+  "name": "product",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": [
+        "number"
+      ],
+      "index": "2d",
+      "comments": "[<longitude>,<latitude>]"
+    },
+    "price": {
+      "type": "number",
+      "comments": "In hundreds"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "establishment": {
+      "type": "object"
+    },
+    "store": {
+      "type": "string",
+      "comments": "The name of the store/restaurant/service provider"
+    },
+    "city": {
+      "type": "string",
+      "comments": "The City"
+    },
+    "postalCode": {
+      "type": "string",
+      "comments": "postalcode"
+    },
+    "type": {
+      "type": "string",
+      "comments": "event, service, restaurant, product, object"
+    },
+    "imgUrl": {
+      "type": "string",
+      "comments": "Url to image"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "products"
+    }
+  ],
+  "methods": {}
+}

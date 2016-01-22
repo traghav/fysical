@@ -32,17 +32,25 @@
     "addressline2": {
       "type": "string"
     },
-    "inventory": {
-      "type": "string"
-    },
-    "commonProducts": {
-      "type": "string"
-    },
     "location": {
       "type": [
         "number"
       ],
-      "index" : "2d"
+      "index": "2d"
+    },
+    "inventory": {
+      "type": [
+        "object"
+      ]
+    },
+    "commonProducts": {
+      "type": [
+        "object"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "comments": "retailer, serviceProvider, restaurant"
     }
   },
   "validations": [],
