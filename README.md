@@ -1,5 +1,4 @@
 # Fysical
-_______
 
 ## The digital gateway to the physical world.
 
